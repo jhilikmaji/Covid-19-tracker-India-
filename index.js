@@ -7,10 +7,10 @@ $(document).ready(function(){
         totalRecovered=data.statewise[0].recovered
         totalDeaths=data.statewise[0].deaths
         totalConfirmed=data.statewise[0].confirmed
-        $("#active").append(totalActive)
-        $("#recovered").append(totalRecovered)
-        $("#deaths").append(totalDeaths)
-        $("#confirmed").append(totalConfirmed)
+        $("#active").html(totalActive)
+        $("#recovered").html(totalRecovered)
+        $("#deaths").html(totalDeaths)
+        $("#confirmed").html(totalConfirmed)
 
         var state = []
         var confirmed = []
